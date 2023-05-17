@@ -61,6 +61,8 @@ lsp.on_attach(function(client, bufnr)
     inoremap("<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+lsp.skip_server_setup({'jdtls'})
+
 lsp.setup()
 vim.diagnostic.config({
     virtual_text = true

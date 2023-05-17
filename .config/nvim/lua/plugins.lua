@@ -77,6 +77,10 @@ require("packer").startup(function(use)
     -- undo tree
     use({"mbbill/undotree"})
 
+    use({'mfussenegger/nvim-jdtls'})
+    use({'mfussenegger/nvim-dap'})
+    use({'rcarriga/nvim-dap-ui'})
+
     if is_bootstrap then
         require("packer").sync()
     end
