@@ -120,3 +120,4 @@ starship init fish | source
 alias nv="nvim "
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak_dh"
+setxkbmap -option caps:escape
